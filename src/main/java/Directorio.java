@@ -47,7 +47,7 @@ public class Directorio {
     }
     
     
-    public boolean guardarEditNuevo(File fileG, JFileChooser selecFileG, IDE compF){
+    public boolean guardarEditNuevo(File fileG, JFileChooser selecFileG, Main compF){
         int x;
         if(compF.getTitle().equals("[#ARS]*"))
             x = 0;
@@ -112,7 +112,7 @@ public class Directorio {
     }
     
     
-    public boolean guardarEditAbrir(File fileG, JFileChooser selecFileG, IDE compF){
+    public boolean guardarEditAbrir(File fileG, JFileChooser selecFileG, Main compF){
         int x;
         if(compF.getTitle().equals("[#ARS]*"))
             x = 0;
@@ -184,7 +184,7 @@ public class Directorio {
     }
     
     
-    public void guardarArch(File file, IDE compF){
+    public void guardarArch(File file, Main compF){
         boolean save = saveFile(file, compF.jtpCode.getText());   
         if(save)
             compF.setTitle(file.getName());
@@ -193,7 +193,7 @@ public class Directorio {
                                          "Error desconocido", 2); 
     }
         
-    public void Nuevo(IDE compF){ 
+    public void Nuevo(Main compF){
         file = selecFile.getSelectedFile();
         
         if(compF.getTitle().contains("*")){
@@ -213,7 +213,7 @@ public class Directorio {
     }
     
     
-    public boolean Abrir(IDE compF){
+    public boolean Abrir(Main compF){
        
         if(compF.getTitle().contains("*")){
             if(guardarEditAbrir(file, selecFile, compF)){
@@ -268,7 +268,7 @@ public class Directorio {
         return true;
     }
     
-      public boolean Importar(IDE compF){
+      public boolean Importar(Main compF){
        
         if(compF.getTitle().contains("*")){
             if(guardarEditAbrir(file, selecFile, compF)){
@@ -318,7 +318,7 @@ public class Directorio {
         return true;
     }
     
-    public boolean Guardar(IDE compF){
+    public boolean Guardar(Main compF){
         if(file != null)
             guardarArch(file, compF);
         else{
@@ -374,7 +374,7 @@ public class Directorio {
     }
     
     
-    public void guardarC(IDE compF){
+    public void guardarC(Main compF){
         JFileChooser tSelecFile = new JFileChooser();
         
         if(tSelecFile.showDialog(compF, "Guardar como") == JFileChooser.APPROVE_OPTION){
@@ -398,7 +398,7 @@ public class Directorio {
         }
     }
 
-    public void Cerrar(IDE compF){
+    public void Cerrar(Main compF){
         if(compF.getTitle().contains("*")){
             JOptionPane.showOptionDialog(compF, "El archivo actual está siendo editado, ¿desea guardar los cambios?",
                                          "¿Descartar edición?", -1, 3, null, options, options[0]);

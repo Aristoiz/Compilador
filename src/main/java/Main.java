@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 
 /**
  * @author mauri
@@ -378,9 +379,11 @@ public class Main extends JFrame {
                     i = posicionMarcador[1];
                 } else {
                     String[] sentencias = blockOfCode.split(";");
+                    String uuidRegex = "~[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}~";
+                    Pattern uuidPattern = Pattern.compile(uuidRegex);
                     for (String sentence : sentencias) {
                         sentence = sentence.trim();
-                        System.out.println(sentence);
+                        //System.out.println(sentence);
                         if (sentence.startsWith("ENTERO")) {
                         }/* else if (sentence.toLowerCase().startsWith("definir")) {
                             //Tomar los parametros dentro de los parentesis
@@ -389,7 +392,7 @@ public class Main extends JFrame {
                                 parametro = parametro.trim();
                             }
                         }*/
-                        else if (sentence.toLowerCase().startsWith("si")) {
+                        if (sentence.toLowerCase().startsWith("si")) {
                             //Declarando funcion if
 
                             String[] condicion = sentence.substring(sentence.indexOf("(")+2, sentence.indexOf(")")).split(" ");
@@ -453,7 +456,7 @@ public class Main extends JFrame {
                             }
 
                         }
-                        else if (sentence.toLowerCase().startsWith("imprime")){
+                        if (sentence.toLowerCase().startsWith("imprime")){
                             jtaCompile.append("\n");
                             String[] imprimir = sentence.substring(sentence.indexOf("(")+2, sentence.indexOf(")")).split(",");
                             if(variablesMap.containsKey(imprimir[0].trim())){
@@ -462,7 +465,62 @@ public class Main extends JFrame {
                                 jtaCompile.append(imprimir[0] + "\n");
                             }
                         }
+//                        System.out.println("======SENTENCIA======");
+//                        System.out.println(sentence);
+//                        System.out.println("======SENTENCIA======");
 
+                        if (sentence.contains("*") || sentence.contains("/") || sentence.contains("+") || sentence.contains("-") && !uuidPattern.matcher(sentence).find()
+                                && !sentence.toLowerCase().contains("definir") && !sentence.toLowerCase().contains("si") && !sentence.toLowerCase().contains("imprime")) {
+                            String[] operacion = sentence.split(" ");
+                            //Reemplazar signos de operacion por su lexema
+                            for (int k = 0; k < operacion.length; k++) {
+                                if (operadoresLogicos.containsKey(operacion[k])) {
+                                    operacion[k] = operadoresLogicos.get(operacion[k]);
+                                }
+                            }
+                            //Remover los valores antes de =>
+                            for (int k = 0; k < operacion.length; k++) {
+                                if (operacion[k].contains("=>")) {
+                                    operacion = Arrays.copyOfRange(operacion, k + 1, operacion.length);
+                                    break;
+                                }
+                            }
+                            //Reemplazar las literales por su valor
+                            for (int k = 0; k < operacion.length; k++) {
+                                if (variablesMap.containsKey(operacion[k])) {
+                                    operacion[k] = (String) variablesMap.get(operacion[k]);
+                                }
+                            }
+
+                            //Concatenar todo en un string
+                            String operacionString = "";
+                            for (int k = 0; k < operacion.length; k++) {
+                                operacionString += operacion[k]+" ";
+                            }
+                            System.out.println("======SENTENCIA======");
+                            System.out.println(operacionString);
+                            System.out.println("======SENTENCIA======");
+                            //Evaluar la operacion usando a la clase Operaciones
+                            Operaciones operaciones = new Operaciones();
+                            Float resultado = operaciones.operacion(operacionString);
+                            System.out.println("======RESULTADO======");
+                            System.out.println(resultado);
+                            System.out.println("======RESULTADO======");
+                            //Obtener la variable a la que se le asignará el resultado a partir de la sentencia
+
+                            String variable = "";
+                            String[] sentencia = sentence.split(" ");
+                            for (int k = 0; k < sentencia.length; k++) {
+                                if (sentencia[k].contains("=>")) {
+                                    variable = sentencia[k - 1];
+                                    break;
+                                }
+                            }
+                            //Cambiamos el valor en el mapa de variables
+                            variablesMap.put(variable, resultado.toString());
+
+
+                        }
                     }
                 }
             }
@@ -720,6 +778,9 @@ public class Main extends JFrame {
         gramatica.group("OPERACION", "REAL (SUMA|RESTA|MULTIPLICACION|DIVISION) OPERACION");
         gramatica.group("OPERACION", "NUMERO (SUMA|RESTA|MULTIPLICACION|DIVISION) OPERACION");
         gramatica.group("OPERACION", "ID (SUMA|RESTA|MULTIPLICACION|DIVISION) OPERACION", operProdIzq);
+        //Operacion de longitud variable
+        gramatica.group("OPERACION", "OPERACION (SUMA|RESTA|MULTIPLICACION|DIVISION) OPERACION");
+
         //ERRORES operacion
         gramatica.group("OPERACION_ER", "NUMERO (SUMA|RESTA|MULTIPLICACION|DIVISION)", 2, "ERROR_SINTACTICO: se necesita un minimo de 2 valores para ralizar la operacion [#, %]");
         gramatica.group("OPERACION_ER", "(SUMA|RESTA|MULTIPLICACION|DIVISION) NUMERO", 2, "ERROR SINTACTICO: se necesita un minimo de 2 valores para ralizar la operacion [#, %]");
@@ -1108,6 +1169,11 @@ public class Main extends JFrame {
         operadoresLogicos.put(">=", "MAYORIGUAL");
         operadoresLogicos.put("==", "IGUAL");
         operadoresLogicos.put("!=", "DIFERENTE");
+        operadoresLogicos.put("+", "SUMA");
+        operadoresLogicos.put("-", "RESTA");
+        operadoresLogicos.put("*", "MULTIPLICACION");
+        operadoresLogicos.put("/", "DIVISION");
+
 
         Functions.setAutocompleterJTextComponent(new String[]{}, jtpCode, () -> {
             timerKeyReleased.restart();
