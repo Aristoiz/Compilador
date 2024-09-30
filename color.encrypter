@@ -1,0 +1,5 @@
+ENTERO A => 20;
+ENTERO B => 10;
+ENTERO D => 10;
+ENTERO C => A+B*D;
+IMPRIME(B);
