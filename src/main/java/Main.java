@@ -73,111 +73,112 @@ public class Main extends JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnGuardar = new JButton();
-        btnNuevo = new JButton();
-        btnAbrir = new JButton();
-        btnReserved = new JButton();
-        btnIdent = new JButton();
-        btnTokens = new JButton();
-        btnCompilar = new JButton();
-        jScrollPane1 = new JScrollPane();
-        jtpCode = new JTextPane();
-        jScrollPane3 = new JScrollPane();
-        jtaCompile = new JTextArea();
-        jScrollPane2 = new JScrollPane();
-        tblTokens = new JTable();
+        btnGuardar = new javax.swing.JButton();
+        btnNuevo = new javax.swing.JButton();
+        btnAbrir = new javax.swing.JButton();
+        btnReserved = new javax.swing.JButton();
+        btnIdent = new javax.swing.JButton();
+        btnTokens = new javax.swing.JButton();
+        btnCompilar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jtpCode = new javax.swing.JTextPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jtaCompile = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tblTokens = new javax.swing.JTable();
+        btnCodigoIntermedio = new javax.swing.JButton();
 
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnGuardar.setIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_save_48px.png")); // NOI18N
+        btnGuardar.setIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_save_48px.png")); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setToolTipText("Guardar Documento");
-        btnGuardar.setHorizontalTextPosition(SwingConstants.CENTER);
-        btnGuardar.setSelectedIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_save_48px_p.png")); // NOI18N
-        btnGuardar.setVerticalAlignment(SwingConstants.BOTTOM);
-        btnGuardar.setVerticalTextPosition(SwingConstants.BOTTOM);
+        btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnGuardar.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_save_48px_p.png")); // NOI18N
+        btnGuardar.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnGuardar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
             }
         });
 
-        btnNuevo.setIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_code_file_48px.png")); // NOI18N
+        btnNuevo.setIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_code_file_48px.png")); // NOI18N
         btnNuevo.setText("Nuevo");
         btnNuevo.setToolTipText("Nuevo Documento");
-        btnNuevo.setHorizontalTextPosition(SwingConstants.CENTER);
-        btnNuevo.setSelectedIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_code_file_48px_p.png")); // NOI18N
-        btnNuevo.setVerticalAlignment(SwingConstants.BOTTOM);
-        btnNuevo.setVerticalTextPosition(SwingConstants.BOTTOM);
+        btnNuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnNuevo.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_code_file_48px_p.png")); // NOI18N
+        btnNuevo.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnNuevo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoActionPerformed(evt);
             }
         });
 
-        btnAbrir.setIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_opened_folder_48px.png")); // NOI18N
+        btnAbrir.setIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_opened_folder_48px.png")); // NOI18N
         btnAbrir.setText("Abrir");
         btnAbrir.setToolTipText("Abrir Documento");
-        btnAbrir.setHorizontalTextPosition(SwingConstants.CENTER);
-        btnAbrir.setSelectedIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_opened_folder_48px_P.png")); // NOI18N
-        btnAbrir.setVerticalAlignment(SwingConstants.BOTTOM);
-        btnAbrir.setVerticalTextPosition(SwingConstants.BOTTOM);
+        btnAbrir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAbrir.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_opened_folder_48px_P.png")); // NOI18N
+        btnAbrir.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnAbrir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnAbrir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAbrirActionPerformed(evt);
             }
         });
 
-        btnReserved.setIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8-text-color-48.png")); // NOI18N
+        btnReserved.setIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8-text-color-48.png")); // NOI18N
         btnReserved.setText("Reservadas");
         btnReserved.setToolTipText("Palabras Reservadas");
-        btnReserved.setHorizontalTextPosition(SwingConstants.CENTER);
-        btnReserved.setSelectedIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8-text-color-48.png")); // NOI18N
-        btnReserved.setVerticalAlignment(SwingConstants.BOTTOM);
-        btnReserved.setVerticalTextPosition(SwingConstants.BOTTOM);
+        btnReserved.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnReserved.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8-text-color-48.png")); // NOI18N
+        btnReserved.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnReserved.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnReserved.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReservedActionPerformed(evt);
             }
         });
 
-        btnIdent.setIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8-text-cursor-48.png")); // NOI18N
+        btnIdent.setIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8-text-cursor-48.png")); // NOI18N
         btnIdent.setText("Ident");
         btnIdent.setToolTipText("Indentacion");
-        btnIdent.setHorizontalTextPosition(SwingConstants.CENTER);
-        btnIdent.setSelectedIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8-text-cursor-48.png")); // NOI18N
-        btnIdent.setVerticalAlignment(SwingConstants.BOTTOM);
-        btnIdent.setVerticalTextPosition(SwingConstants.BOTTOM);
+        btnIdent.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnIdent.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8-text-cursor-48.png")); // NOI18N
+        btnIdent.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnIdent.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnIdent.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIdentActionPerformed(evt);
             }
         });
 
-        btnTokens.setIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8-index-48.png")); // NOI18N
+        btnTokens.setIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8-index-48.png")); // NOI18N
         btnTokens.setText("Tokens");
         btnTokens.setToolTipText("Abrir Tokens");
         btnTokens.setAutoscrolls(true);
-        btnTokens.setHorizontalTextPosition(SwingConstants.CENTER);
-        btnTokens.setSelectedIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8-index-48.png")); // NOI18N
-        btnTokens.setVerticalAlignment(SwingConstants.BOTTOM);
-        btnTokens.setVerticalTextPosition(SwingConstants.BOTTOM);
+        btnTokens.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnTokens.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8-index-48.png")); // NOI18N
+        btnTokens.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnTokens.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnTokens.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTokensActionPerformed(evt);
             }
         });
 
-        btnCompilar.setIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_code_48px.png")); // NOI18N
+        btnCompilar.setIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_code_48px.png")); // NOI18N
         btnCompilar.setText("Compilar");
         btnCompilar.setToolTipText("Compilar");
         btnCompilar.setAutoscrolls(true);
-        btnCompilar.setHorizontalTextPosition(SwingConstants.CENTER);
-        btnCompilar.setSelectedIcon(new ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_code_48px_p.png")); // NOI18N
-        btnCompilar.setVerticalAlignment(SwingConstants.BOTTOM);
-        btnCompilar.setVerticalTextPosition(SwingConstants.BOTTOM);
+        btnCompilar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCompilar.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_code_48px_p.png")); // NOI18N
+        btnCompilar.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnCompilar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnCompilar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCompilarActionPerformed(evt);
             }
         });
@@ -206,55 +207,75 @@ public class Main extends JFrame {
         ));
         jScrollPane2.setViewportView(tblTokens);
 
-        GroupLayout layout = new GroupLayout(getContentPane());
+        btnCodigoIntermedio.setIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\Icon\\icons8_code_48px.png")); // NOI18N
+        btnCodigoIntermedio.setText("Codigo Intermedio");
+        btnCodigoIntermedio.setToolTipText("Compilar");
+        btnCodigoIntermedio.setAutoscrolls(true);
+        btnCodigoIntermedio.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCodigoIntermedio.setSelectedIcon(new javax.swing.ImageIcon("C:\\Users\\mauri\\Downloads\\untitled\\src\\main\\resources\\pressed\\icons8_code_48px_p.png")); // NOI18N
+        btnCodigoIntermedio.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnCodigoIntermedio.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCodigoIntermedio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCodigoIntermedioActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addGroup(layout.createSequentialGroup()
                                                 .addContainerGap()
-                                                .addComponent(jScrollPane3, GroupLayout.PREFERRED_SIZE, 1014, GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 1014, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                                 .addGap(21, 21, 21)
-                                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(jScrollPane1, GroupLayout.PREFERRED_SIZE, 593, GroupLayout.PREFERRED_SIZE)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGroup(layout.createSequentialGroup()
                                                                 .addComponent(btnNuevo)
-                                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(btnGuardar)
-                                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(btnAbrir)
-                                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(btnReserved)
-                                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(btnIdent)
-                                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(btnTokens)
-                                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(btnCompilar)))
-                                                .addGap(18, 18, 18)
-                                                .addComponent(jScrollPane2, GroupLayout.PREFERRED_SIZE, 403, GroupLayout.PREFERRED_SIZE)))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(18, 18, 18)
+                                                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(9, 9, 9)
+                                                                .addComponent(btnCodigoIntermedio)))))
                                 .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                                 .addGap(29, 29, 29)
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(btnNuevo)
                                         .addComponent(btnIdent)
                                         .addComponent(btnReserved)
                                         .addComponent(btnAbrir)
                                         .addComponent(btnGuardar)
                                         .addComponent(btnCompilar)
-                                        .addComponent(btnTokens))
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jScrollPane2, GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                        .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE))
+                                        .addComponent(btnTokens)
+                                        .addComponent(btnCodigoIntermedio))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE))
                                 .addGap(40, 40, 40)
-                                .addComponent(jScrollPane3, GroupLayout.PREFERRED_SIZE, 131, GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
@@ -300,6 +321,17 @@ public class Main extends JFrame {
 
 
     }//GEN-LAST:event_btnCompilarActionPerformed
+
+    private void btnCodigoIntermedioActionPerformed(java.awt.event.ActionEvent evt) {
+        codigoIntermedio();
+        JTextArea textArea = new JTextArea(codigoIntermedio);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
+        textArea.setEditable(false);
+        scrollPane.setPreferredSize( new Dimension( 400, 500 ) );
+        JOptionPane.showMessageDialog(null, scrollPane, "Tripletas",JOptionPane.PLAIN_MESSAGE);
+    }
 
     private void Compile() {
         clearFields();
@@ -368,9 +400,11 @@ public class Main extends JFrame {
     }
 
     private void executeCode(ArrayList<String> blocksOfCode, int repeats) {
+        boolean ifCicle = false;
         for (int j = 1; j <= repeats; j++) {
             int repeatCode = -1;
-            for (int i = 0; i < blocksOfCode.size(); i++) {
+            int i;
+            for (i = 0; i < blocksOfCode.size(); i++) {
                 String blockOfCode = blocksOfCode.get(i);
                 if (repeatCode != -1) {
                     int[] posicionMarcador = CodeBlock.getPositionOfBothMarkers(blocksOfCode, blockOfCode);
@@ -381,7 +415,8 @@ public class Main extends JFrame {
                     String[] sentencias = blockOfCode.split(";");
                     String uuidRegex = "~[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}~";
                     Pattern uuidPattern = Pattern.compile(uuidRegex);
-                    for (String sentence : sentencias) {
+                    for (int l = 0; l < sentencias.length; l++) {
+                        String sentence=sentencias[l];
                         sentence = sentence.trim();
                         //System.out.println(sentence);
                         if (sentence.startsWith("ENTERO")) {
@@ -393,75 +428,98 @@ public class Main extends JFrame {
                             }
                         }*/
                         if (sentence.toLowerCase().startsWith("si")) {
-                            //Declarando funcion if
-
-                            String[] condicion = sentence.substring(sentence.indexOf("(")+2, sentence.indexOf(")")).split(" ");
+                            String[] condicion = sentence.substring(sentence.indexOf("(") + 2, sentence.indexOf(")")).split(" ");
                             //Da resultado a [A, condicion, B]
                             System.out.println(Arrays.asList(condicion));
-                            for (int k=0; k<condicion.length; k++){
-                                if(operadoresLogicos.containsKey(condicion[k])){
+                            for (int k = 0; k < condicion.length; k++) {
+
+                                if (operadoresLogicos.containsKey(condicion[k])) {
                                     String operador = (String) operadoresLogicos.get(condicion[k]);
                                     System.out.println(operador);
                                     Float valor1 = 0.0f;
                                     Float valor2 = 0.0f;
 
-                                    if(variablesMap.containsKey(condicion[k-1])){
-                                        String valorTemp = (String) variablesMap.get(condicion[k-1]);
+                                    if (variablesMap.containsKey(condicion[k - 1])) {
+                                        String valorTemp = (String) variablesMap.get(condicion[k - 1]);
                                         valor1 = Float.parseFloat(valorTemp);
-                                    }else {
-                                        valor1 = Float.parseFloat(condicion[k-1]);
-                                    }if(variablesMap.containsKey(condicion[k+1])){
-                                        String valorTemp = (String) variablesMap.get(condicion[k+1]);
+                                    } else {
+                                        valor1 = Float.parseFloat(condicion[k - 1]);
+                                    }
+                                    if (variablesMap.containsKey(condicion[k + 1])) {
+                                        String valorTemp = (String) variablesMap.get(condicion[k + 1]);
                                         System.out.println(valorTemp);
                                         valor2 = Float.parseFloat(valorTemp);
-                                    }else {
-                                        valor2 = Float.parseFloat(condicion[k+1]);
+                                    } else {
+                                        valor2 = Float.parseFloat(condicion[k + 1]);
                                     }
                                     System.out.println(valor1);
                                     System.out.println(valor2);
 
-                                    switch (operadoresLogicos.get(condicion[k])){
+                                    switch (operadoresLogicos.get(condicion[k])) {
                                         case "IGUAL":
-                                            if (valor1.equals(valor2)){
+                                            if (valor1.equals(valor2)) {
                                                 System.out.println("Se cumple la condicion");
+                                            }else{
+                                                i=i+2;
+                                                continue;
                                             }
                                             break;
                                         case "DIFERENTE":
-                                            if (!valor1.equals(valor2)){
+                                            if (!valor1.equals(valor2)) {
                                                 System.out.println("Se cumple la condicion");
+                                            }else{
+                                                i=i+2;
+                                                continue;
+
                                             }
                                             break;
                                         case "MAYOR":
-                                            if (valor1 > valor2){
+                                            if (valor1 > valor2) {
                                                 System.out.println("Se cumple la condicion");
+                                            }else{
+                                                i=i+2;
+                                                continue;
+
                                             }
                                             break;
                                         case "MENOR":
-                                            if (valor1 < valor2){
+                                            if (valor1 < valor2) {
                                                 System.out.println("Se cumple la condicion");
+                                            }else{
+                                                i=i+2;
+                                                continue;
+
                                             }
                                             break;
                                         case "MAYORIGUAL":
-                                            if (valor1 >= valor2){
+                                            if (valor1 >= valor2) {
                                                 System.out.println("Se cumple la condicion");
+                                            }else {
+                                                i=i+2;
+                                                continue;
+
                                             }
                                             break;
                                         case "MENORIGUAL":
-                                            if (valor1 <= valor2){
+                                            if (valor1 <= valor2) {
                                                 System.out.println("Se cumple la condicion");
+                                            }else{
+                                                i=i+2;
+                                                continue;
                                             }
                                             break;
+
                                     }
                                 }
                             }
 
                         }
-                        if (sentence.toLowerCase().startsWith("imprime")){
+                        if (sentence.toLowerCase().startsWith("imprime") && !ifCicle) {
                             jtaCompile.append("\n");
-                            String[] imprimir = sentence.substring(sentence.indexOf("(")+2, sentence.indexOf(")")).split(",");
-                            if(variablesMap.containsKey(imprimir[0].trim())){
+                            String[] imprimir = sentence.substring(sentence.indexOf("(") + 2, sentence.indexOf(")")).split(",");
+                            if (variablesMap.containsKey(imprimir[0].trim())) {
                                 jtaCompile.append(variablesMap.get(imprimir[0].trim()) + "\n");
-                            }else {
+                            } else {
                                 jtaCompile.append(imprimir[0] + "\n");
                             }
                         }
@@ -470,7 +528,7 @@ public class Main extends JFrame {
 //                        System.out.println("======SENTENCIA======");
 
                         if (sentence.contains("*") || sentence.contains("/") || sentence.contains("+") || sentence.contains("-") && !uuidPattern.matcher(sentence).find()
-                                && !sentence.toLowerCase().contains("definir") && !sentence.toLowerCase().contains("si") && !sentence.toLowerCase().contains("imprime")) {
+                                && !sentence.toLowerCase().contains("definir") && !sentence.toLowerCase().contains("si") && !sentence.toLowerCase().contains("imprime")   && !ifCicle) {
                             String[] operacion = sentence.split(" ");
                             //Reemplazar signos de operacion por su lexema
                             for (int k = 0; k < operacion.length; k++) {
@@ -495,17 +553,17 @@ public class Main extends JFrame {
                             //Concatenar todo en un string
                             String operacionString = "";
                             for (int k = 0; k < operacion.length; k++) {
-                                operacionString += operacion[k]+" ";
+                                operacionString += operacion[k] + " ";
                             }
-                            System.out.println("======SENTENCIA======");
-                            System.out.println(operacionString);
-                            System.out.println("======SENTENCIA======");
+//                            System.out.println("======SENTENCIA======");
+//                            System.out.println(operacionString);
+//                            System.out.println("======SENTENCIA======");
                             //Evaluar la operacion usando a la clase Operaciones
                             Operaciones operaciones = new Operaciones();
                             Float resultado = operaciones.operacion(operacionString);
-                            System.out.println("======RESULTADO======");
-                            System.out.println(resultado);
-                            System.out.println("======RESULTADO======");
+//                            System.out.println("======RESULTADO======");
+//                            System.out.println(resultado);
+//                            System.out.println("======RESULTADO======");
                             //Obtener la variable a la que se le asignará el resultado a partir de la sentencia
 
                             String variable = "";
@@ -524,12 +582,15 @@ public class Main extends JFrame {
                     }
                 }
             }
+
         }
 
     }
-    private void arbolDeExpresion (String s){
+
+    private void arbolDeExpresion(String s) {
 
     }
+
     private void semanticAnalyzer() {
         HashMap<String, String> tiposDatos = new HashMap<>();
         tiposDatos.put("NUMERO", "INT");
@@ -707,11 +768,11 @@ public class Main extends JFrame {
             }
 
         }// FOR  OPERPRODDOBLE
-        for (Production id: printProd){
+        for (Production id : printProd) {
             //Si id.lexemeRank(2) es un ID evaluar si esta declarada si es una cadena un numero o un booleano imprimir el valor
             String s = id.lexemeRank(2);
             id.lexicalCompRank(2);
-            if(!identificadores.containsKey(id.lexemeRank(2)) && id.lexicalCompRank(2).equalsIgnoreCase("ID")) {
+            if (!identificadores.containsKey(id.lexemeRank(2)) && id.lexicalCompRank(2).equalsIgnoreCase("ID")) {
                 errors.add(new ErrorLSSL(1, "Error semántico: Variable " + id.lexemeRank(2) + " no declarada. [#, %]", id, true));
             }
             System.out.println("======PRINTPROD======");
@@ -1112,6 +1173,7 @@ public class Main extends JFrame {
     private JTextArea jtaCompile;
     public JTextPane jtpCode;
     private JTable tblTokens;
+    private JButton btnCodigoIntermedio;
     // End of variables declaration//GEN-END:variables
 
     private void inicializar() {
@@ -1206,4 +1268,226 @@ public class Main extends JFrame {
         }
         Functions.colorTextPane(textsColor, jtpCode, new Color(40, 40, 40));
     }
-}
+
+
+    private void codigoIntermedio() {
+        ArrayList<Token> toks = new ArrayList<Token>();
+        codigoIntermedio = ("--Código intermedio--\n");
+        int temp;
+        //revisa las declaraciones
+        for (Production id : identProd) {
+            temp = 1;
+            if (id.lexicalCompRank(2).equals("ASIGNACION") && id.getSizeTokens() > 5) {
+                codigoIntermedio = codigoIntermedio + ("\n\n=============================\n" + id.lexemeRank(0, -1) + "\n=============================");
+                codObj.add("\n\n=============================\n;" + id.lexemeRank(0, -1) + "\n=============================");
+
+                toks = id.getTokens();
+                for (int i = 0; i < toks.size(); i++) {
+                    if (toks.get(i).getLexeme().equals("*") || toks.get(i).getLexeme().equals("/")) {
+                        i--;
+                        codigoIntermedio = codigoIntermedio + ("\nT" + temp + " = " + toks.get(i).getLexeme() + toks.get(i + 1).getLexeme() + toks.get(i + 2).getLexeme());
+
+                        codObj.add("\nT" + temp + " = " + toks.get(i).getLexeme() + toks.get(i + 1).getLexeme() + toks.get(i + 2).getLexeme());
+
+                        toks.remove(i);
+                        toks.remove(i);
+                        toks.remove(i);
+                        toks.add(i, new Token("T" + temp, "ID", i, i));
+                        temp++;
+                    }//if token = * /
+
+                }//for cada
+                for (int i = 0; i < toks.size(); i++) {
+                    if (toks.get(i).getLexeme().equals("+") || toks.get(i).getLexeme().equals("-")) {
+                        i--;
+                        codigoIntermedio = codigoIntermedio + ("\nT" + temp + " = " + toks.get(i).getLexeme() + toks.get(i + 1).getLexeme() + toks.get(i + 2).getLexeme());
+
+                        codObj.add("\nT" + temp + " = " + toks.get(i).getLexeme() + toks.get(i + 1).getLexeme() + toks.get(i + 2).getLexeme());
+
+                        toks.remove(i);
+                        toks.remove(i);
+                        toks.remove(i);
+                        toks.add(i, new Token("T" + temp, "ID", i, i));
+                        temp++;
+                    }//if token = + -
+                }
+                codigoIntermedio = codigoIntermedio + ("\n" + id.lexemeRank(1) + " = " + "T" + (temp - 1));
+                //para guardar las variables declaradas para posteriormente utilizarlo en el metodo ensamblador
+                variables.add(id.lexemeRank(1));
+                //codigo Objeto
+                codObjComp.add(objectCode(codObj));
+                System.out.println(codObjComp.get(0));
+                codObj.clear();
+            }//if hay asignacion
+
+        }//for producciones
+        //revisa asignaciones
+        for (Production id : asigProd) {
+            temp = 1;
+            if (id.lexicalCompRank(1).equals("ASIGNACION") && id.getSizeTokens() > 5) {
+                codigoIntermedio = codigoIntermedio + ("\n\n=============================\n" + id.lexemeRank(0, -1) + "\n=============================");
+                codObj.add("\n\n=============================\n;" + id.lexemeRank(0, -1) + "\n=============================");
+
+                toks = id.getTokens();
+                for (int i = 0; i < toks.size(); i++) {
+                    if (toks.get(i).getLexeme().equals("*") || toks.get(i).getLexeme().equals("/")) {
+                        i--;
+                        codigoIntermedio = codigoIntermedio + ("\nT" + temp + " = " + toks.get(i).getLexeme() + toks.get(i + 1).getLexeme() + toks.get(i + 2).getLexeme());
+
+                        codObj.add("\nT" + temp + " = " + toks.get(i).getLexeme() + toks.get(i + 1).getLexeme() + toks.get(i + 2).getLexeme());
+
+                        toks.remove(i);
+                        toks.remove(i);
+                        toks.remove(i);
+                        toks.add(i, new Token("T" + temp, "ID", i, i));
+                        temp++;
+                    }//if token = * /
+
+                }//for cada
+                for (int i = 0; i < toks.size(); i++) {
+                    if (toks.get(i).getLexeme().equals("+") || toks.get(i).getLexeme().equals("-")) {
+                        i--;
+                        codigoIntermedio = codigoIntermedio + ("\nT" + temp + " = " + toks.get(i).getLexeme() + toks.get(i + 1).getLexeme() + toks.get(i + 2).getLexeme());
+
+                        codObj.add("\nT" + temp + " = " + toks.get(i).getLexeme() + toks.get(i + 1).getLexeme() + toks.get(i + 2).getLexeme());
+
+                        toks.remove(i);
+                        toks.remove(i);
+                        toks.remove(i);
+                        toks.add(i, new Token("T" + temp, "ID", i, i));
+                        temp++;
+                    }//if token = + -
+                }
+                codigoIntermedio = codigoIntermedio + ("\n" + id.lexemeRank(0) + " = " + "T" + (temp - 1));
+                //para guardar las variables declaradas para posteriormente utilizarlo en el metodo ensamblador
+                variables.add(id.lexemeRank(0));
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7
+                //codigo Objeto
+                codObjComp.add(objectCode(codObj));
+                System.out.println(codObjComp.get(0));
+                codObj.clear();
+                //System.out.println(objectCode(codObj));
+            }//if hay asignacion
+
+
+        }
+        //INPUT Y OUTPUT
+        for (Production id : funcProd) {
+            codigoIntermedio = codigoIntermedio + ("\n\n=============================\n" + id.lexemeRank(0, -1) + "\n=============================");
+            codigoIntermedio = codigoIntermedio + ("\nparam " + id.lexemeRank(2) + "\ncall " + id.lexemeRank(0) + ", 1");
+
+        }//FOR FUNCPROD
+        //IF
+        for (Production id : ifProd) {
+            codigoIntermedio = codigoIntermedio + ("\n\n=============================\n" + id.lexemeRank(0, -1) + "\n=============================");
+            codigoIntermedio = codigoIntermedio + ("\nT1 = " + id.lexemeRank(2, -3) + "\nif_false T1 goto L1 " + "\n.\n.\n.\nlabel L1");
+
+        }//FOR IFPROD
+        //WHILE
+        for (Production id : whileProd) {
+            codigoIntermedio = codigoIntermedio + ("\n\n=============================\n" + id.lexemeRank(0, -1) + "\n=============================");
+            codigoIntermedio = codigoIntermedio + ("\nlabel L1\nT1 = " + id.lexemeRank(2, -3) + "\nif_false T1 goto L2 " + "\n.\n.\n.\ngoto L1\nlabel L2");
+
+        }//FOR WHILEPROD
+    }
+        //System.out.print(codigoIntermedio);
+        //////////////////GENERACION DE CODIGO OBJETO///////////////////
+        public String objectCode(ArrayList<String> tripletas1) {
+            ArrayList<String> tripletas = new ArrayList<String>();
+            tripletas = tripletas1;
+            String tl = tripletas.get(0) + "\n";
+            tripletas.remove(0);
+
+            String inst, R0, R1, R2, R3, op, m;
+            int caso = 0;
+            inst = R1 = R0 = R2 = R3 = op = m = "";
+            int index = 0;
+            //oCode
+
+            for (String tripleta : tripletas) {
+
+                tripleta = tripleta.replaceAll("T[1-9] = ", "").replaceAll("\\n", "");
+
+                //JOptionPane.showMessageDialog(null,tripleta);
+                // Definimos que operacion es
+                if (tripleta.contains("*")) {
+                    inst = "MUL";
+                    op = "*";
+                }
+                if (tripleta.contains("/")) {
+                    inst = "DIV";
+                    op = "/";
+                }
+                if (tripleta.contains("-")) {
+                    inst = "SUB";
+                    op = "-";
+                } else if (tripleta.contains("+")) {
+                    inst = "ADD";
+                    op = "+";
+                }
+                // Definimos que operacion es
+
+                //Condicionales para ver el orden de la operacion
+                if (R0.isEmpty() && R1.isEmpty()) {
+                    //JOptionPane.showMessageDialog(null,"caso 0");
+                    R0 = (tripleta.substring(0, tripleta.indexOf(op))).replaceAll(" ", "");
+                    R1 = (tripleta.substring(tripleta.indexOf(op) + 1)).replaceAll(" ", "");
+
+                } else if ((tripleta.substring(0, tripleta.indexOf(op))).contains("T") && (tripleta.substring(tripleta.indexOf(op) + 1)).contains("T")) {//2 TEMPORALES
+                    R0 = "R0";
+                    R1 = "R1";
+                    caso = 4;
+                    //JOptionPane.showMessageDialog(null,"caso 4");
+                } else if ((tripleta.substring(0, tripleta.indexOf(op))).contains("T")) {//temporal izquierdo
+                    R1 = (tripleta.substring(tripleta.indexOf(op) + 1)).replaceAll(" ", "");
+                    caso = 1;
+                    //JOptionPane.showMessageDialog(null,"caso 1");
+                } else if ((tripleta.substring(tripleta.indexOf(op) + 1)).contains("T")) {//temporal derecho
+                    R1 = (tripleta.substring(0, tripleta.indexOf(op))).replaceAll(" ", "");
+                    caso = 2;
+                    //JOptionPane.showMessageDialog(null,"caso 2");
+                } else {
+                    R1 = (tripleta.substring(0, tripleta.indexOf(op))).replaceAll(" ", "");
+                    R2 = (tripleta.substring(tripleta.indexOf(op) + 1)).replaceAll(" ", "");
+                    caso = 5;
+                    //JOptionPane.showMessageDialog(null,"caso 5");
+                }
+
+                //Condicionales para ver el orden de la operacion
+                switch (caso) {
+                    case 1:
+                        m += "LD R1," + R1 + "\n";
+                        m += inst + " R0,R0,R1" + "\n";
+                        break;
+                    case 2:
+                        m += "LD R1," + R1 + "\n";
+                        m += inst + " R0,R1,R0" + "\n";
+                        break;
+                    case 3:
+                        m += "LD R1," + R2 + "\n";
+                        m += "LD R2," + R2 + "\n";
+                        m += inst + " R1,R1,R2" + "\n";
+                        break;
+                    case 4:
+                        m += inst + " " + R0 + "," + R0 + "," + R1;
+                        break;
+                    case 5:
+                        m += "LD R1," + R1 + "\n";
+                        m += "LD R2," + R2 + "\n";
+                        m += inst + " R1,R1,R2" + "\n";
+                        caso = 0;
+                        break;
+                    default:
+                        m += "LD R0," + R0 + "\n";
+                        m += "LD R1," + R1 + "\n";
+                        m += inst + " R0,R0,R1" + "\n";
+                        caso = 0;
+                }
+
+                // caso = true;
+            }//Recorrer tripletas
+            //System.out.println(tl+m);
+            return (tl + m);
+        }//fin_codObjeto
+    }
+
